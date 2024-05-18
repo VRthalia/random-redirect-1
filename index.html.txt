@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Redirect</title>
+<script>
+function randomRedirect() {
+const urls = [
+'https://docs.google.com/forms/d/e/https://docs.google.com/forms/d/e/1FAIpQLSdHK7BE-hiL6vka9qoxAMEeG7o8UDOjh4Pb6206BjCOuYo79Q/viewform/viewform',
+'https://docs.google.com/forms/d/e/https://docs.google.com/forms/d/e/1FAIpQLScBwGho1KT6_1t76aJk-HwFkks_VBh-Wh2BYT94FPLS0yNtqA/viewform/viewform',
+'https://docs.google.com/forms/d/e/https://docs.google.com/forms/d/e/1FAIpQLSc9ItUNUP5-F9tVwYw-cTZRU40TRdmZalhT8O-aiB3zLwHjug/viewform/viewform'
+];
+const randomIndex = Math.floor(Math.random() * urls.length);
+window.location.href = urls[randomIndex];
+}
+</script>
+</head>
+<body onload="randomRedirect()">
+<p>Redirecting...</p>
+</body>
+</html>
